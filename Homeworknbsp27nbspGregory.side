@@ -1,0 +1,787 @@
+{
+  "id": "3bb7ff4f-2b7a-46b7-847f-54d073e96903",
+  "version": "2.0",
+  "name": "Homework&nbsp;27&nbsp;Gregory",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "746f774e-0082-44eb-a27e-cb78a774c39d",
+    "name": "standard_user",
+    "commands": [{
+      "id": "a2c504da-c3c3-450f-a209-49f35145dfc2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "702ab87e-4400-4b8f-9c18-9aeb31ef12f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "968fca2c-876a-40eb-a5af-c629d956ae8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "494d2bac-307f-4dbc-81ec-1613f5a6ebb2",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "6d9767ce-22c4-41f7-8fc4-e899260e5c5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85a98932-6ee1-4e62-95d4-91f20080ce32",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "6f3a5fa4-81b6-4425-86b2-c865e4d748bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba8284f1-9637-439c-8571-927e61d60a0b",
+      "comment": "Check if picture of \"Sauce Labs Backpack\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=#item_4_img_link > .inventory_item_img",
+      "targets": [
+        ["css=#item_4_img_link > .inventory_item_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Backpack']", "xpath:img"],
+        ["xpath=//a[@id='item_4_img_link']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e975792c-9ac7-4ac8-bc40-2396be4c2c60",
+      "comment": "Check if Title of \"Sauce Labs Backpack\" presents with main products page",
+      "command": "assertText",
+      "target": "css=#item_4_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_4_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_4_title_link']/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Backpack"
+    }, {
+      "id": "3db46d3c-2e84-4c2f-b55f-bec60e9768ea",
+      "comment": "Check if description of \"Sauce Labs Backpack\" presents with main products page",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(1) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(1) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }, {
+      "id": "c2fc28fc-7a7c-4ae2-b249-763bab63bc74",
+      "comment": "Go to product page",
+      "command": "click",
+      "target": "css=#item_4_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_4_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_4_title_link']/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b2243e8-607c-47ae-9d44-470ff3058dce",
+      "comment": "Check if picture of \"Sauce Labs Backpack\" presents with standalone page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_details_img",
+      "targets": [
+        ["css=.inventory_details_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Backpack']", "xpath:img"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "531e5e35-87ce-4288-be92-304c4f89e71e",
+      "comment": "Check if Title of \"Sauce Labs Backpack\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_name",
+      "targets": [
+        ["css=.inventory_details_name", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Backpack"
+    }, {
+      "id": "8d0b5f04-8b9c-4638-92e5-9eb34e1ef887",
+      "comment": "Check if description of \"Sauce Labs Backpack\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }, {
+      "id": "753bd213-96c0-442c-b162-85e49ccd0e50",
+      "comment": "Go back to all products page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59a72cc2-ca4b-4f00-8a60-62baa818a077",
+      "comment": "Check if picture of \"Sauce Labs Bolt T-Shirt\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=#item_1_img_link > .inventory_item_img",
+      "targets": [
+        ["css=#item_1_img_link > .inventory_item_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Bolt T-Shirt']", "xpath:img"],
+        ["xpath=//a[@id='item_1_img_link']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9cb1840-ca7a-4de6-91ae-5272edd37f0b",
+      "comment": "Check if Title of \"Sauce Labs Bolt T-Shirt\" presents with main products page",
+      "command": "assertText",
+      "target": "css=#item_1_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_1_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_1_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Bolt T-Shirt"
+    }, {
+      "id": "342fdbc6-2b8b-4c96-ac51-57b3185f957d",
+      "comment": "Check if description of  \"Sauce Labs Bolt T-Shirt\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_item:nth-child(3) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(3) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[3]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "be26c6b9-62ed-4956-b1e8-41fcf1f660ce",
+      "comment": "Go to \"Sauce Labs Bolt T-Shirt\" product page",
+      "command": "click",
+      "target": "css=#item_1_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_1_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_1_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2820df5-7544-4c1c-9c41-222efb3dfef3",
+      "comment": "Check if picture of \"Sauce Labs Bolt T-Shirt\" presents with standalone page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_details_img",
+      "targets": [
+        ["css=.inventory_details_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Bolt T-Shirt']", "xpath:img"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00a070d8-27c1-4924-9135-39aeae6344fe",
+      "comment": "Check if Title of \"Sauce Labs Bolt T-Shirt\"  presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_name",
+      "targets": [
+        ["css=.inventory_details_name", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Bolt T-Shirt"
+    }, {
+      "id": "cedf36bc-27ef-47b3-b54f-96c0ef0b0152",
+      "comment": "Check if description of \"Sauce Labs Bolt T-Shirt\"  presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "19b2c341-d8c9-489d-8b7e-aa38a4381349",
+      "comment": "Go back to all products page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4a34291-fa18-4053-95b2-cd8fa2a6f0a9",
+      "comment": "Check if picture of \"Sauce Labs Onesie\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=#item_2_img_link > .inventory_item_img",
+      "targets": [
+        ["css=#item_2_img_link > .inventory_item_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Onesie']", "xpath:img"],
+        ["xpath=//a[@id='item_2_img_link']/img", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99c700c3-c5bc-4eea-95a9-8ae73b5fb3f4",
+      "comment": "Check if Title of \"Sauce Labs Onesie\" presents with main products page",
+      "command": "assertText",
+      "target": "css=#item_2_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_2_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_2_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Onesie"
+    }, {
+      "id": "e83ff3db-4fc3-4a16-952e-769e246928d6",
+      "comment": "Check if description of \"Sauce Labs Onesie\" presents with main products page",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(5) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(5) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[5]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    }, {
+      "id": "69f3e3e8-0881-4017-9ad6-2083b2d5ab0a",
+      "comment": "Go to \"Sauce Labs Onesie\" product page",
+      "command": "click",
+      "target": "css=#item_2_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_2_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_2_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10582ca3-fc96-4f3b-a3ad-7563c03a35e3",
+      "comment": "Check if picture of \"Sauce Labs Onesie\" presents with standalone page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_details_img",
+      "targets": [
+        ["css=.inventory_details_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Onesie']", "xpath:img"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "785f4eeb-ff30-4ff5-a251-1f5b37976b55",
+      "comment": "Check if Title of \"Sauce Labs Onesie\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_name",
+      "targets": [
+        ["css=.inventory_details_name", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Onesie"
+    }, {
+      "id": "4d57138c-ec9e-4c44-a1d2-6fe89a1b3196",
+      "comment": "Check if description of \"Sauce Labs Onesie\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    }, {
+      "id": "0d7809fb-064e-437a-a1a7-e385c87178a2",
+      "comment": "Go back to all products page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e59e05fb-b723-4f8b-9af6-9678bdf09f4e",
+      "comment": "Check if picture of \"Sauce Labs Bike Light\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=#item_0_img_link > .inventory_item_img",
+      "targets": [
+        ["css=#item_0_img_link > .inventory_item_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Bike Light']", "xpath:img"],
+        ["xpath=//a[@id='item_0_img_link']/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39f5734a-97cc-46e3-b416-87db7aa0d207",
+      "comment": "Check if Title of \"Sauce Labs Bike Light\" presents with main products page",
+      "command": "assertText",
+      "target": "css=#item_0_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_0_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_0_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Bike Light"
+    }, {
+      "id": "3a214c5c-555d-41af-a83f-da90844177e3",
+      "comment": "Check if description of \"Sauce Labs Bike Light\" presents with main products page",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(2) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(2) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    }, {
+      "id": "73a16310-f265-497b-a9d6-0b53564af693",
+      "comment": "Go to \"Sauce Labs Bike Light\" product page",
+      "command": "click",
+      "target": "css=#item_0_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_0_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_0_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "445aad96-a513-4720-81f9-6333b2ff6393",
+      "comment": "Check if picture of \"Sauce Labs Bike Light\" presents with standalone page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_details_img",
+      "targets": [
+        ["css=.inventory_details_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Bike Light']", "xpath:img"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "819a18f7-7c60-4138-9f7f-334ea6d5039a",
+      "comment": "Check if Title of \"Sauce Labs Bike Light\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_name",
+      "targets": [
+        ["css=.inventory_details_name", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Bike Light"
+    }, {
+      "id": "5c1c4612-05c1-4e38-9aa9-abad14448003",
+      "comment": "Check if description of \"Sauce Labs Bike Light\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    }, {
+      "id": "698289d6-1d98-4ff4-898d-cbb574131ba3",
+      "comment": "Go back to all products page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59fe10e-7ce0-445f-bfa9-780ed672a0dd",
+      "comment": "Check if picture of \"Sauce Labs Fleece Jacket\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=#item_5_img_link > .inventory_item_img",
+      "targets": [
+        ["css=#item_5_img_link > .inventory_item_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Fleece Jacket']", "xpath:img"],
+        ["xpath=//a[@id='item_5_img_link']/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb17d3f-1f95-4ae2-ac9b-877207e0c766",
+      "comment": "Check if Title of \"Sauce Labs Fleece Jacket\" presents with main products page",
+      "command": "assertText",
+      "target": "css=#item_5_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_5_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_5_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Fleece Jacket"
+    }, {
+      "id": "fd6dd93f-484a-484f-bbf8-c52dd80b5189",
+      "comment": "Check if description of \"Sauce Labs Fleece Jacket\" presents with main products page",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(4) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(4) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    }, {
+      "id": "a7a35c8b-e5fe-47e0-8c3d-1ec5d10fc751",
+      "comment": "Go to \"Sauce Labs Fleece Jacket\" product page",
+      "command": "click",
+      "target": "css=#item_5_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_5_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_5_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d31abae-6b1a-4a14-955c-9c2b5a5c24a6",
+      "comment": "Check if picture of \"Sauce Labs Fleece Jacket\" presents with standalone page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_details_img",
+      "targets": [
+        ["css=.inventory_details_img", "css:finder"],
+        ["xpath=//img[@alt='Sauce Labs Fleece Jacket']", "xpath:img"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81ce6361-5290-4619-834c-9851820a9456",
+      "comment": "Check if Title of \"Sauce Labs Fleece Jacket\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_name",
+      "targets": [
+        ["css=.inventory_details_name", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Sauce Labs Fleece Jacket"
+    }, {
+      "id": "95cf281a-f4d0-4d76-8131-596cecfe582d",
+      "comment": "Check if description of \"Sauce Labs Fleece Jacket\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    }, {
+      "id": "3c41bcd0-f9b2-4339-8959-621dc7b94002",
+      "comment": "Go back to all products page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "684ac6d7-51a1-4b75-a0bc-1a6933e7fea9",
+      "comment": "Check if picture of \"T-Shirt (Red)\" presents with main products page",
+      "command": "assertElementPresent",
+      "target": "css=#item_3_img_link > .inventory_item_img",
+      "targets": [
+        ["css=#item_3_img_link > .inventory_item_img", "css:finder"],
+        ["xpath=//img[@alt='Test.allTheThings() T-Shirt (Red)']", "xpath:img"],
+        ["xpath=//a[@id='item_3_img_link']/img", "xpath:idRelative"],
+        ["xpath=//div[6]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbd5f99-8c10-4f02-b440-6b26c5a145d7",
+      "comment": "Check if Title of \"T-Shirt (Red)\" presents with main products page",
+      "command": "assertText",
+      "target": "css=#item_3_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_3_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_3_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": "Test.allTheThings() T-Shirt (Red)"
+    }, {
+      "id": "d84ffef1-02f2-4285-8bc3-424df70ffe64",
+      "comment": "Check if description of \"T-Shirt (Red)\" presents with main products page",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(6) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(6) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[6]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."
+    }, {
+      "id": "0ffbaf8f-fb47-41ef-a555-c01ee2ca03e0",
+      "comment": "Go to \"T-Shirt (Red)\" product page",
+      "command": "click",
+      "target": "css=#item_3_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_3_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_3_title_link']/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57173944-203a-4f80-ba32-c8d1bc32626e",
+      "comment": "Check if picture of \"T-Shirt (Red)\" presents with standalone page",
+      "command": "assertElementPresent",
+      "target": "css=.inventory_details_img",
+      "targets": [
+        ["css=.inventory_details_img", "css:finder"],
+        ["xpath=//img[@alt='Test.allTheThings() T-Shirt (Red)']", "xpath:img"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa4af098-63f4-4853-8eff-aaf3fa10599c",
+      "comment": "Check if Title of \"T-Shirt (Red)\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_name",
+      "targets": [
+        ["css=.inventory_details_name", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Test.allTheThings() T-Shirt (Red)"
+    }, {
+      "id": "0261f3ae-4ef8-4f44-bd5e-3e8693ad2d5f",
+      "comment": "Check if description of \"T-Shirt (Red)\" presents with standalone page",
+      "command": "assertText",
+      "target": "css=.inventory_details_desc",
+      "targets": [
+        ["css=.inventory_details_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_item_container']/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."
+    }, {
+      "id": "7ddd84bb-d2ba-4e07-a453-eb987ded4da5",
+      "comment": "Go back to all products page",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[10]/div/div/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "27204d97-a5c7-49b7-869c-3a9f5dc5ea2f",
+    "name": "locked_user",
+    "commands": [{
+      "id": "44ff267d-5fe8-4408-9110-d010d11ee191",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fa73511-f91a-4dfa-ad4a-d4717686865c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "902x710",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6508a00-85e3-49e0-acb3-d1d0f28ac84e",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1be684a4-bedf-48d0-b9f1-1588398e5d2c",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "79222164-613d-436b-bbb3-5fa896b225c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "237af530-5e0e-47a8-9d6e-24216f13b005",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "a37721d0-5c13-4bcd-9be8-52707f9dee7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7e8611e-d117-4a03-a6c7-db50d6957cb1",
+      "comment": "Error message check",
+      "command": "assertElementPresent",
+      "target": "css=*[data-test=\"error\"]",
+      "targets": [
+        ["css=*[data-test=\"error\"]", "css:data-attr"],
+        ["css=h3", "css:finder"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[3]/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Epic sadface: Sorry, this user has been locked out.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f985e476-dde0-40f0-a2f9-9ce83d187f6d",
+    "name": "Homework 27",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["746f774e-0082-44eb-a27e-cb78a774c39d"]
+  }, {
+    "id": "55f8551a-fde6-45d1-83fd-809e726841cb",
+    "name": " locked_out_user",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
